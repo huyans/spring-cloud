@@ -2,6 +2,7 @@ package com.yan.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * Created by huyan on 2020/11/30.
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * DESC:
  */
 @SpringBootApplication
+@EnableEurekaClient
 public class CloudProviderPayment8001 {
 
     public static void main(String[] args) {
