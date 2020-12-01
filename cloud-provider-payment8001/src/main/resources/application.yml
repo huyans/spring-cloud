@@ -15,4 +15,4 @@ spring:
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml
-  type-aliases-package: com.yan.cloud.payment.entity
+  type-aliases-package: com.yan.cloud.entity

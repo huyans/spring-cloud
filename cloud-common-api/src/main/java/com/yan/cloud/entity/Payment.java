@@ -1,4 +1,4 @@
-package com.yan.cloud.payment.entity;
+package com.yan.cloud.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

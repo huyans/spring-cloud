@@ -1,7 +1,7 @@
 package com.yan.cloud.payment.controller;
 
 import com.yan.cloud.common.CommonResult;
-import com.yan.cloud.payment.entity.Payment;
+import com.yan.cloud.entity.Payment;
 import com.yan.cloud.payment.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,12 +19,12 @@ public class PaymentController {
     private PaymentService paymentService;
 
     @PostMapping("/create")
-    public CommonResult createPayment(Payment payment) {
+    public CommonResult createPayment(@RequestBody Payment payment) {
         int result = paymentService.savePayment(payment);
         if (result > 0) {
             return new CommonResult(200, "success");
         }else {
-            return new CommonResult(400, "can save payment");
+            return new CommonResult(400, "can not save payment");
         }
     }
 

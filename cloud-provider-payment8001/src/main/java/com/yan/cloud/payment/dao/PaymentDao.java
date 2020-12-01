@@ -1,6 +1,6 @@
 package com.yan.cloud.payment.dao;
 
-import com.yan.cloud.payment.entity.Payment;
+import com.yan.cloud.entity.Payment;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

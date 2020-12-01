@@ -1,6 +1,6 @@
 package com.yan.cloud.payment.service;
 
-import com.yan.cloud.payment.entity.Payment;
+import com.yan.cloud.entity.Payment;
 
 /**
  * Created by huyan on 2020/11/30.
